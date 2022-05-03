@@ -1,0 +1,38 @@
+$color-50: hsl(172, 67%, 45%);
+$color-100: hsl(183, 100%, 15%);
+$color-200: hsl(186, 14%, 43%);
+$color-300: hsl(184, 14%, 56%);
+$color-400: hsl(185, 41%, 84%);
+$color-500: hsl(189, 41%, 97%);
+$color-600: hsl(0, 0%, 100%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Source Code Pro";
+  background-color: $color-400;
+}

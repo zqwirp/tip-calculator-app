@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("assets/fonts/static/SourceCodePro-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Source Code Pro";
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+.calc__header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.calc__inputs-wrapper {
+  padding: 4px;
+}
+
+.calc__container {
+  max-width: 500px;
+  padding: 20px 26px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 22px;
+  color: hsl(186deg, 14%, 43%);
+}
+
+.calc__input-group:not(:last-child) {
+  margin-bottom: 34px;
+}
+.calc__input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.calc__input-group .calc__input {
+  width: 100%;
+  padding: 8px 15px;
+  background-color: hsl(189deg, 41%, 97%);
+  border-radius: 5px;
+  border-style: none;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  caret-color: hsl(183deg, 100%, 15%);
+}
+.calc__input-group .calc__input:focus {
+  outline: 2px solid hsl(183deg, 100%, 15%);
+}
+.calc__input-group .grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.calc__input-group .grid button {
+  padding: 6px 7px;
+  background-color: hsl(183deg, 100%, 15%);
+  border-style: none;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.2s;
+}
+.calc__input-group .grid button:hover {
+  background-color: #006166;
+}
+.calc__input-group .grid button:active {
+  background-color: lightcyan;
+  color: darkcyan;
+}
+.calc__input-group .grid button::after {
+  content: "%";
+}
+.calc__input-group .grid button.selected {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+.calc__input-group .group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.calc__input-group .group img {
+  height: 14px;
+  position: absolute;
+  left: 16px;
+}
+
+.calc__results-wrapper {
+  margin-top: 36px;
+  padding: 25px;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .calc__results-wrapper {
+    margin-top: 0;
+  }
+}
+.calc__results-wrapper .calc__result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.calc__results-wrapper .calc__result .desc-1 {
+  font-weight: 600;
+  color: white;
+}
+.calc__results-wrapper .calc__result .desc-1 .desc-2 {
+  color: hsl(184deg, 14%, 56%);
+}
+.calc__results-wrapper .calc__result .result-group {
+  display: flex;
+  align-items: center;
+}
+.calc__results-wrapper .calc__result .result-group .result {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 26px;
+  font-weight: 700;
+}
+.calc__results-wrapper .calc__result .result-group img {
+  height: 22px;
+  filter: invert(56%) sepia(94%) saturate(347%) hue-rotate(122deg) brightness(94%) contrast(89%);
+}
+.calc__results-wrapper .reset-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: hsl(172deg, 67%, 45%);
+  border-style: none;
+  border-radius: 6px;
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+.calc__results-wrapper .reset-btn:hover {
+  background-color: #009199;
+}
+.calc__results-wrapper .reset-btn:active {
+  background-color: lightcyan;
+  color: darkcyan;
+}
+
+.attribution {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .app {
+    height: 100vh;
+  }
+
+  .calc__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 25px;
+    gap: 20px;
+    max-width: 960px;
+  }
+
+  .calc__inputs-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  .calc__inputs-wrapper .calc__input-group .calc__input {
+    font-size: 24px;
+  }
+  .calc__inputs-wrapper .calc__input-group label {
+    font-size: 15px;
+  }
+  .calc__inputs-wrapper .calc__input-group .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .calc__results-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+  }
+  .calc__results-wrapper .calc__result {
+    margin: 0;
+  }
+  .calc__results-wrapper .calc__result:nth-child(2) {
+    margin-bottom: 90px;
+  }
+  .calc__results-wrapper .calc__result .result-group img {
+    height: 35px;
+  }
+  .calc__results-wrapper .calc__result .result-group .result {
+    font-size: 45px;
+  }
+  .calc__results-wrapper .reset-btn {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

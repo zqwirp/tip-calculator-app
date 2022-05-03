@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<script
+			src="https://kit.fontawesome.com/e35febb80b.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tip Calculcator</title>
+	</head>
+
+	<body>
+		<!-- APP -->
+		<div class="app">
+			<header class="calc__header">
+				<img src="assets/logo.svg" alt="logo" />
+			</header>
+
+			<main class="calc__container">
+				<!-- INPUT SECTION -->
+				<section class="calc__inputs-wrapper">
+					<div class="calc__input-group input">
+						<label for="bill-input">Bill</label>
+						<div class="group">
+							<img src="assets/icon-dollar.svg" alt="dollar" />
+							<input id="bill-input" class="calc__input" type="text" autofocus/>
+						</div>
+					</div>
+
+					<div class="calc__input-group">
+						<label>Select Tip %</label>
+						<div id="tip-inputs" class="grid">
+							<button value="5">5</button>
+							<button value="10">10</button>
+							<button value="15">15</button>
+							<button value="20">20</button>
+							<button value="25">25</button>
+							<input type="text" class="calc__input" placeholder="Custom" />
+						</div>
+					</div>
+
+					<div class="calc__input-group input">
+						<label for="people-input">Number of People</label>
+						<div class="group">
+							<img src="assets/icon-person.svg" alt="person" />
+							<input id="people-input" class="calc__input" type="text" />
+						</div>
+					</div>
+				</section>
+				<!-- END OF INPUT SECTION -->
+
+				<section class="calc__results-wrapper">
+					<div class="calc__result">
+						<div class="desc-1">
+							Tip Amount<br /><span class="desc-2">/ person</span>
+						</div>
+						<div class="result-group">
+							<img src="assets/icon-dollar.svg" alt="dollar" /><span
+								id="tip-per-person"
+								class="result"
+							>
+								0.00</span
+							>
+						</div>
+					</div>
+
+					<div class="calc__result">
+						<div class="desc-1">
+							Total<br /><span class="desc-2">/ person</span>
+						</div>
+						<div class="result-group">
+							<img src="assets/icon-dollar.svg" alt="dollar" /><span
+								id="total-per-person"
+								class="result"
+							>
+								0.00</span
+							>
+						</div>
+					</div>
+
+					<button id="reset" class="reset-btn">RESET</button>
+				</section>
+			</main>
+
+			<footer>
+				<div class="attribution">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="https://zqwirp.github.io">zqwirp</a>.
+					<br />&copy; 2022 zqwirp
+				</div>
+			</footer>
+		</div>
+		<!-- END OF APP -->
+
+		<script src="script.js"></script>
+	</body>
+</html>
