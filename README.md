@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+SCREENSHOT
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/zqwirp/fem-tip-calculator)
+- [Live Site URL](https://lambent-marshmallow-574230.netlify.app/)
 
 ## My process
 
@@ -48,11 +48,12 @@ Users should be able to:
 ### What I learned
 
 - I learn to save some element on a variable so that you can use for toggling.
+- I learn to use BEM CSS.
 
 ### Continued development
 
 - Fix the variable name for each BEM class.
-- Add event to handle error(ex: input is empty or not number or less than or greater than)
+- Add event to handle error(ex: input is empty or not number or less than or greater than).
 
 ### Useful resources
 
@@ -62,4 +63,4 @@ Users should be able to:
 ## Author
 
 - Website - [zqwirp](https://zqwirp.github.io)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@zqwirp](https://www.frontendmentor.io/profile/zqwirp)
