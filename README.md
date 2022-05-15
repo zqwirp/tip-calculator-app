@@ -6,13 +6,11 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -24,10 +22,6 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
-
-### Screenshot
-
-SCREENSHOT
 
 ### Links
 
@@ -43,7 +37,7 @@ SCREENSHOT
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- SASS - For styles
+- SASS
 
 ### What I learned
 
@@ -55,12 +49,7 @@ SCREENSHOT
 - Fix the variable name for each BEM class.
 - Add event to handle error(ex: input is empty or not number or less than or greater than).
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author
 
-- Website - [zqwirp](https://zqwirp.github.io)
+- Website - zqwirp
 - Frontend Mentor - [@zqwirp](https://www.frontendmentor.io/profile/zqwirp)
