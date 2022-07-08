@@ -69,6 +69,7 @@
       color: white;
 
       transition: background-color 0.2s;
+      cursor: pointer;
 
       &:hover {
         background-color: lighten($color-100, 5);

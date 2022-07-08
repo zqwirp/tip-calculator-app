@@ -147,6 +147,7 @@ body {
   border-radius: 6px;
   color: white;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 .calc__input-group .grid button:hover {
   background-color: #006166;
