@@ -220,6 +220,7 @@ body {
   color: hsl(183deg, 100%, 15%);
   font-weight: 700;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 .calc__results-wrapper .reset-btn:hover {
   background-color: #009199;
